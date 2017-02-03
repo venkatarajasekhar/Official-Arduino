@@ -8,7 +8,7 @@ This file is part of the GSM3 communications library for Arduino
 -- TCP/IP connections
 -- HTTP basic clients
 
-This library has been developed by Telefónica Digital - PDI -
+This library has been developed by TelefÃ³nica Digital - PDI -
 - Physical Internet Lab, as part as its collaboration with
 Arduino and the Open Hardware Community. 
 
@@ -58,7 +58,7 @@ class GSM3MobileServerService : public Server
 			@param port			Port
 			@param synch		True if the server acts synchronously
 		 */
-		GSM3MobileServerService(uint8_t port, bool synch=true);
+		GSM3MobileServerService(uint8_t port, bool synch);
 		
 		/** Get last command status
 			@return returns 0 if last command is still executing, 1 success, >1 error
@@ -74,7 +74,7 @@ class GSM3MobileServerService : public Server
 								blocking.
 		  @return Client if successful, else error
 		*/
-		GSM3MobileClientService available(bool synch=true);
+		GSM3MobileClientService available(bool synch);
 		
 		// Just to keep in line with Ethernet.
 		// Write to every open socket...
